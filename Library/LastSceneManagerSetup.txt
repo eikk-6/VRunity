@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Create-with-VR-Starter-Scene.unity
+- path: Assets/Scenes/VRProjectScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
