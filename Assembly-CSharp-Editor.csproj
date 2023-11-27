@@ -1193,6 +1193,10 @@
       <Project>{E59FDEFC-49B5-173E-6A14-5957A5EDB52C}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj">
+      <Project>{E5A410E4-7D51-A9FA-FCF9-147C61D14DDA}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
       <Project>{C73F3086-D5F3-48D2-3D1D-F6EAF1E182EA}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor</Name>
