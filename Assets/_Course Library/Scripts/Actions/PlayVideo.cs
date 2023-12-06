@@ -83,7 +83,7 @@ public class PlayVideo : MonoBehaviour
             Play();
         }
     }
-
+    
     public void Play()
     {
         videoMaterial.color = Color.white;

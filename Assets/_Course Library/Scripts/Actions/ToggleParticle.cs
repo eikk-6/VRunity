@@ -50,4 +50,6 @@ public class ToggleParticle : MonoBehaviour
             main.playOnAwake = false;
         }
     }
+
+   
 }
