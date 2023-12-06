@@ -1,10 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Lighter : MonoBehaviour
 {
     public GameObject flamePrefab;
+    public bool state = false;
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Candle"))
         {
@@ -12,13 +15,13 @@ public class Lighter : MonoBehaviour
         }
     }
 
-    private void LightCandle(GameObject candle)
+    public void LightCandle(GameObject candle)
     {
-        GameObject flame = Instantiate(flamePrefab, candle.transform.position, Quaternion.identity);
-        flame.transform.parent = candle.transform;
-
-        flame.AddComponent<OnVelocity>();
-
-        flame.transform.parent = transform;
+        if (state == false)
+        {
+            candle.SetActive(true);
+        }
+        else
+            candle.SetActive(false);
     }
 }
