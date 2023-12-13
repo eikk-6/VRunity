@@ -34,6 +34,8 @@ public class PlayQuickSound : MonoBehaviour
         audioSource.pitch = defaultPitch;
     }
 
+  
+
     private void OnValidate()
     {
         AudioSource audioSource = GetComponent<AudioSource>();

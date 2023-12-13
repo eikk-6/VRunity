@@ -8,7 +8,7 @@ public class ToggleParticle : MonoBehaviour
 {
     private ParticleSystem currentParticleSystem = null;
     private MonoBehaviour currentOwner = null;
-
+    
     private void Awake()
     {
         currentParticleSystem = GetComponent<ParticleSystem>();
@@ -50,6 +50,6 @@ public class ToggleParticle : MonoBehaviour
             main.playOnAwake = false;
         }
     }
-
+    
    
 }

@@ -6,6 +6,9 @@ namespace UnityEngine.XR.Content.Interaction
     /// Calls events for when the velocity of this objects breaks the begin and end threshold.
     /// </summary>
     [RequireComponent(typeof(Rigidbody))]
+
+    
+
     public class OnCandle: MonoBehaviour
     {
         [SerializeField]
@@ -37,6 +40,7 @@ namespace UnityEngine.XR.Content.Interaction
         Rigidbody m_RigidBody;
         bool m_HasBegun;
 
+        public GameObject asd;
         void Awake()
         {
             m_RigidBody = GetComponent<Rigidbody>();
@@ -79,7 +83,16 @@ namespace UnityEngine.XR.Content.Interaction
             if (endCheck)
                 m_OnEnd.Invoke();
 
+            asd.SetActive(false);
+
             return endCheck;
+        }
+        void OnTriggerEnter(Collider other)
+        {
+            if(other.gameObject.CompareTag("Candle"))
+            {
+                asd.SetActive(true);
+            }
         }
     }
 }
